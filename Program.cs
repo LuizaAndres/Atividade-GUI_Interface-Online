@@ -10,7 +10,6 @@ namespace Atividade_Interface
 {
     public class Program : System.Windows.Forms.Form
     {
-        
         // The main entry point for the application.
         [STAThread]
         static void Main()
@@ -20,7 +19,6 @@ namespace Atividade_Interface
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Formulario());
         }
-
         public class Formulario : Form
         {
             //Image for window
@@ -42,6 +40,7 @@ namespace Atividade_Interface
 
             // Data entry boxes with rich way
             RichTextBox txt_Nome;
+            
             // Data entry numeric system selection up/down
             NumericUpDown num_DataNascDia;
             NumericUpDown num_DataNascMes;
@@ -343,6 +342,7 @@ namespace Atividade_Interface
                    MessageBox.Show(ex.Message, "Unable to open link that was clicked."); 
                 }
             }
+            
             private void VisitLink()
             {
                 this.link_help.LinkVisited = true;
